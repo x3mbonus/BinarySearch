@@ -3,7 +3,7 @@
 //
 //void test(int i);
 //
-//int binary_search(std::vector<double> sortedVector, double searchItem);
+//int binary_search(const std::vector<double> & sortedVector, double searchItem);
 //
 //int main()
 //{
@@ -15,7 +15,7 @@
 //	system("pause");	
 //}
 //
-//int binary_search(std::vector<double> sortedVector, double searchItem)
+//int binary_search(const std::vector<double> & sortedVector, double searchItem)
 //{
 //	int lowerBound = 0;
 //	int upperBound = sortedVector.size() - 1;

@@ -3,8 +3,8 @@
 
 void test(int i);
 
-int lower_bound(std::vector<double> sortedVector, double searchItem);
-int upper_bound(std::vector<double> sortedVector, double searchItem);
+int lower_bound(const std::vector<double> & sortedVector, double searchItem);
+int upper_bound(const std::vector<double> & sortedVector, double searchItem);
 
 int main()
 {
@@ -16,7 +16,7 @@ int main()
 	system("pause");	
 }
 
-int some_bound(std::vector<double> sortedVector, double searchItem, bool isLower)
+int some_bound(const std::vector<double> & sortedVector, double searchItem, bool isLower)
 {
 	int lowerBound = 0;
 	int upperBound = sortedVector.size() - 1;
@@ -86,7 +86,7 @@ int some_bound(std::vector<double> sortedVector, double searchItem, bool isLower
 	return middle;
 }
 
-int lower_bound(std::vector<double> sortedVector, double searchItem)
+int lower_bound(const std::vector<double> & sortedVector, double searchItem)
 {
 	/*int lowerBound = 0;
 	int upperBound = sortedVector.size() - 1;
@@ -143,7 +143,7 @@ int lower_bound(std::vector<double> sortedVector, double searchItem)
 	return some_bound(sortedVector, searchItem, true);
 }
 
-int upper_bound(std::vector<double> sortedVector, double searchItem)
+int upper_bound(const std::vector<double> & sortedVector, double searchItem)
 {
 	/*int lowerBound = 0;
 	int upperBound = sortedVector.size() - 1;
